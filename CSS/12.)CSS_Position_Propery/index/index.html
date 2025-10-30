@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 133px;
+            width: 80wv;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black;
+
+        }
+
+        /* This will make the box have a height of 133px and width of 80% of the viewport width */
+        .box1 {
+            background-color: rgb(155, 16, 127);
+            /* position: relative; */
+            /* This will make the box relative */
+            /* Relative means the element is positioned relative to its normal position */
+            /* position: fixed; */
+            /* This will make the box fixed */
+            top: 0px;
+            position: sticky;
+            /* This will make the box sticky */
+            /* can be used for nav bar */
+            height: 80px;
+            margin: 0%;
+            z-index: 1;
+            padding: 0%;
+
+        }
+
+        .box2 {
+            background-color: blue;
+            position: absolute;
+            width: 600px;
+            height: 200px;
+            top: 4px;
+            left: 20px;
+        }
+
+        .box3 {
+            background-color: green;
+            position: relative;
+            left: 10px;
+            height: 111px;
+        }
+
+        .box4 {
+            background-color: yellow;
+            position: relative;
+            left: 20px;
+        }
+
+        .parent {
+            height: 500px;
+            padding: 2px;
+            margin: 34px;
+            border: 2px solid black;
+            position: relative;
+            /* This will make the parent element relative */
+            /* position relative means the child box is positioned relative to the parent, if position relative is not present, the child box will be positioned relative to the viewport/html body */
+
+            /* Exception: transform, filter, or perspective properties can also make an element appear as positioned */
+            /* transform: translate(0);
+            filter: invert(0);
+            perspective: 0em; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1">
+
+        </div>
+        <div class="box box2">
+
+        </div>
+
+        <div class="box box3">
+
+        </div>
+        <div class="box box4">
+
+        </div>
+    </div>
+
+</body>
+
+</html>

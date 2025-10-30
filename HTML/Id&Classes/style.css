@@ -1,0 +1,11 @@
+.red {  /* Class selector */
+    background-color: red;
+}
+
+.bg-blue {  /* Class selector */
+    background-color: rgb(28, 7, 132);
+}
+
+#blue {  /* ID selector */
+    background-color: blue;
+}

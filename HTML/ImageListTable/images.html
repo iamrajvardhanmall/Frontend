@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Images</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img width="230" height="230" src="Raj.png" alt="Rajvardhan Mall" />
+    <br />
+    <!-- <br> is used to make a line break -->
+
+    <table>
+      <caption>
+        People Table
+      </caption>
+      <!-- caption means table title -->
+      <thead>
+        <!-- Headings -->
+        <tr>
+          <!-- Row -->
+          <th>Name</th>
+          <!-- th means heading -->
+          <th>Address</th>
+          <!-- th means heading -->
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Body -->
+        <tr>
+          <td colspan="2">Raj</td>
+          <!-- td means data -->
+          <td>25</td>
+        </tr>
+        <tr>
+          <td colspan="2">Deepak</td>
+          <!-- calspan means Deepak will take 2 column space-->
+          <td rowspan="2">26</td>
+        </tr>
+        <tr>
+          <td colspan="2">Ramesh</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <!-- Footer -->
+        <tr>
+          <td colspan="2">Total</td>
+          <td>71</td>
+        </tr>
+      </tfoot>
+    </table>
+    <!-- NOTE: thead, tbody and tfoot is used for grouping -->
+
+
+    <!-- HTML LIST-->
+    <ul> <!-- unordered list -->
+        <li type="square">Apple</li> 
+        <li>Banana</li>  <!-- type "disc is by default "-->
+        <li>Cherry</li>
+    </ul>
+    <ol type="A"> <!-- ordered list -->
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+    </ol>
+    <dl> <!-- definition list -->
+        <dt>Apple</dt>
+        <dd>A fruit</dd>
+        <dt>Banana</dt>
+        <dd>A fruit</dd>
+        <dt>Cherry</dt>
+        <dd>A fruit</dd>
+    </dl>
+
+
+    <script src="" async defer></script>
+  </body>
+</html>

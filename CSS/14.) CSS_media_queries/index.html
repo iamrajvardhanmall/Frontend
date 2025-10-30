@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        @media screen and (orientation: landscape) {
+            body {
+                border: 5px solid rgb(62, 128, 0);
+            }
+        }
+
+        /* @media only|not mediatype and
+        (expressions) {
+            CSS-Code; 
+        } */
+
+        @media only screen and (max-width: 455px) {
+            body {
+                background-color: yellow;
+            }
+
+            .boxes {
+                flex-direction: column;
+                /* Display flex-direction is used to create a flexible layout in columns */
+            }
+        }
+
+        .boxes {
+            display: flex;
+            /* Display flex is used to create a flexible layout in rows */
+        }
+
+        .box {
+            width: 344px;
+            height: 344px;
+            background-color: blue;
+            padding: 3px;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Meta query is used to make websites responsive -->
+    <div>
+        Hello, Bhai How are you?
+    </div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

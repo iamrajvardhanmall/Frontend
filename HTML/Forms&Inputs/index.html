@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Forms - Lets Learn it</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <form action="post">
+      <div>
+        <!-- div is for block of code-->
+        <label for="name"></label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          autofocus required pattern="[A-Za-z]+" title="Name should contain only alphabets"
+        />  <!-- Autofocus makes the field selected when the page loads -->
+        <!-- Required attribute makes the field mandatory-->
+        <!-- Pattern attribute validates the input-->
+        
+        <!-- Id is unique-->
+      </div>
+      <div>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+      </div>
+      <div>
+        <input type="checkbox" id="terms" name="terms" />
+        <label for="terms">I agree to the terms and conditions</label>
+      </div>
+
+      <div>
+        <label for="message">Message:</label>
+        <br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        <!-- textarea is used for multiline input -->
+        <!-- async and defer are used for loading scripts asynchronously-->
+      </div>
+      <div>
+        <select name="country">
+            <option value="">Select your country</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="India">India</option>
+        </select>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+        <input type="reset" value="Reset" />
+      </div>
+
+    </form>
+
+    <script src="" async defer></script>
+  </body>
+</html>

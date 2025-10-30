@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+
+    <style>
+        .cards {
+            border: 2px solid black;
+            display: flow-root;
+            /* display flow-root is used to create a new block formatting context */
+        }
+
+        .card {
+            border: 2px solid red;
+        }
+
+        .card:nth-child(3) {
+            background-color: lightblue;
+            clear: right;
+            /* Clear is used to control the behavior of floated elements */
+        }
+
+        img {
+            float: right;
+            /* Float is used to position elements to the left or right of their container */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="Rajvardhan_Mall__Photo.png" alt="" width="230">
+        <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum doloremque similique
+            obcaecati dicta inventore dolore alias pariatur nihil quod odit iusto ratione rem est id sit, natus quos hic
+            odio tenetur placeat dolorum. Quisquam reiciendis, quos sit asperiores veritatis consequuntur quasi eaque
+            delectus tenetur cumque facere esse hic eius dolor doloribus ipsa ad in accusamus velit!</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+
+</html>

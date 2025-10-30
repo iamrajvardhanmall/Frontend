@@ -1,0 +1,14 @@
+#box {
+    height: 100px;
+    width: 700px;
+    background-color: lightblue;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    font-style: italic;
+    font-size: small;
+    text-align: center;
+}

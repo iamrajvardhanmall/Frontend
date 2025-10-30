@@ -1,0 +1,2 @@
+In the main.jsx, StrictMode is on so this mode runs the app twice in the development
+First to check and second in reality

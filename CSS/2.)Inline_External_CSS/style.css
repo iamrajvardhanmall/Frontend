@@ -1,0 +1,14 @@
+/*
+3 ways to add css
+1.) Inline css
+2.) Internal css
+3.) External css
+
+ */
+
+/* External CSS */
+
+h1 {
+    background-color: yellow;
+    color: white;
+}

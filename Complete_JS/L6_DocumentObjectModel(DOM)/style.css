@@ -1,0 +1,11 @@
+.heading-class  {
+    color: blueviolet;
+    text-decoration: line-through;
+    background-color: lightgreen;
+    
+}
+
+body {
+    background-color: lightskyblue;
+    font-family: Arial, sans-serif;
+}

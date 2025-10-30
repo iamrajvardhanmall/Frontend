@@ -1,0 +1,6 @@
+Step 1: Create new vite app
+--> vite.dev -> Get started -> npm create vite@latest
+--> cd stateIntro -> npm i -> npm run dev
+
+
+...App.jsx

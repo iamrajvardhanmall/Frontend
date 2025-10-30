@@ -1,0 +1,8 @@
+***useRef Hook***:
+NOTE: If we change state or props, the component re-renders, but when we change Ref the component does not re-render.
+Refrence: App_1.jsx
+https://react.dev/reference/react/useRef  (React Documentation)
+
+Examples of useRef:
+1.) App_1.jsx
+2.) App.jsx

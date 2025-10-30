@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            /* NOTE: All this property are applied on container */
+
+            border: 2px solid black;
+            display: flex;
+            /* Display flex means the children will be arranged in a row */
+            height: 80vh;
+            justify-content: center;
+            /* Justify content: center means the items will be centered along the main axis */
+            align-items: center;
+            /* Align items: center means the items will be centered along the cross axis */
+
+            /* flex-direction: column; */
+            /* Flex direction: column means the items will be arranged in a column */
+            /* flex-direction: column-reverse; */
+            /* Flex direction: column-reverse means the items will be arranged in a column but in reverse order */
+
+            flex-wrap: wrap;
+            /* Flex wrap: wrap means the items will wrap to the next line if they exceed the container width */
+            flex-wrap: wrap-reverse;
+            /* Flex wrap: wrap-reverse means the items will wrap to the next line in reverse order */
+
+            /* align-content: center; */
+            /* Align content: center means the lines of items will be centered along the cross axis */
+            /* There is no justify-items in flexbox */
+
+            flex-flow: row wrap;
+            /* Flex flow is a shorthand for flex-direction and flex-wrap */
+
+            gap: 10px 30px;
+            /* Gap: 10px 30px means there will be a 10px gap between rows and a 30px gap between columns */
+
+
+
+        }
+
+        .item {
+            /* flex-grow: 1; */
+            /* Flex grow: 1 means this item will grow to fill the available space */
+            height: 50px;
+            width: 50px;
+            background-color: rosybrown;
+            border: 2px solid brown;
+            margin: 4px;
+
+            
+        }
+
+        /* Default order is 0 */
+        /* Order: 1 means this item will be placed first in the order */
+        .order-1{
+            order: 1;
+        }
+        /* Order: 2 means this item will be placed second in the order */
+        .order-2{
+            order: 2;
+        }
+        /* Order: 3 means this item will be placed third in the order */
+        .order-3{
+            order: 3;
+        }
+
+        .item3 {
+            /* flex-grow: 1; */
+            /* Flex grow: 1 means this item will grow to fill the available space */
+
+            /* flex-shrink: 2; */
+            /* Flex shrink: 2 means this item will shrink twice as much as other items */
+
+            align-self: flex-end;
+        }
+
+        .item6 {
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item order-1">1</div>
+            <div class="item order-2">2</div>
+            <div class="item item3">3</div>
+            <div class="item order-1">4</div>
+            <div class="item">5</div>
+            <div class="item item6">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+            <div class="item">13</div>
+            <div class="item">14</div>
+            <div class="item">15</div>
+            <div class="item">16</div>
+            
+        </div>
+    </main>
+    
+</body>
+</html>
