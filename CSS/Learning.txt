@@ -1,0 +1,1 @@
+1.) We should use gap in Flexbox and Grid instead of padding

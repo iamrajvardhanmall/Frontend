@@ -20,7 +20,8 @@
                Grid Area: The space occupied by a single grid item */
             grid-template-rows: 100px 100px 100px;
 
-            grid-template-columns: 1fr 2fr 1fr;
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            grid-template-columns: repeat(4, minmax(100px, 1fr));
             /* This means the first column will take 1 fraction of the available space,
                the second column will take 2 fractions, and the third column will take 1 fraction. */
 
