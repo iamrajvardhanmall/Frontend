@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            width: 700px;
+            height: 500px;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: [First]120px [Second]100px;
+            /* First and second are the naming of grid */
+            /* grid-template-rows is used to define the height of the container's columns */
+            /* Grid Line: Lines are the dividing lines between the columns and rows
+               Grid Cell: The space between the grid lines
+               Grid Track: The space allocated for a single row or column
+               Grid Area: The space occupied by a single grid item */
+            grid-template-rows: 100px 100px 100px;
+
+            grid-template-columns: 1fr 2fr 1fr;
+            /* This means the first column will take 1 fraction of the available space,
+               the second column will take 2 fractions, and the third column will take 1 fraction. */
+
+            /* gap: 10px;  */
+            /* gap between rows and columns */
+            row-gap: 10px;
+            column-gap: 44px;
+
+            justify-items: center;
+            align-items: center;
+
+        }
+
+        .items {
+            border: 2px solid rgb(255, 0, 0);
+            height: 55px;
+            width: 55px;
+
+        }
+
+        .item4 {
+            /* grid-row: 1 / 2;   */
+            /* This means grid starts from 1 and goes to 2 */
+            /* grid-column: 1 / 2; */
+        }
+
+        .item1 {
+            /* grid-row: 1 / 2; */
+            /* Or we can also do.. */
+            /* grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column: 1 / 2; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items item4">4</div>
+        <div class="items">5</div>
+    </div>
+</body>
+</html>
