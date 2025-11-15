@@ -56,17 +56,59 @@ calculator(10, 15, (a, b) => {
 function getData(dataId, getNextData) {
     setTimeout(() => {
         console.log("Data", dataId);
+        resolve("Successfully");
         if (getNextData) {
             getNextData();
         }
-    }, 2000);
+    }, 5000);
 }
 
-getData(3, () => {   // This is called a callback hell or pyramid of doom
-    getData(5, () => {
-        getData(7, () => {
-            getData(9);
-        });
-    });
-});  
+// getData(3, () => {   // This is called a callback hell or pyramid of doom
+//     console.log("Getting data2...");
+//     getData(5, () => {
+//         console.log("Getting data2...");
+//         getData(7, () => {
+//             console.log("Getting data2...");
+//             getData(9);
+//         });
+//     });
+// });  
 // Pyramid of Doom: This callback call 3 first with 2s delay then calls 5 with another 2s delay.
+
+
+// Promise Chaining
+function getData(dataId, getNextData) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Data", dataId);
+            resolve("Successfully");
+        }, 2000);
+    });
+};
+
+// let p1 = getData(1);
+// getData(1).then((res) => {
+//     console.log(res);
+//     getData(2).then((res) => {
+//         console.log(res);
+//         getData(3).then((res) => {
+//             console.log(res);
+//         });
+//     });
+// });
+
+// The above code means first getData(1) is called in 2s then the getData(2) is called in another 2s and then getData(3) is called in another 2s. So total time will be 6s.
+
+// This is called Promise Chaining(Promise chaining means linking multiple .then() calls so that each one runs only after the previous Promise finishes)
+
+// Best way to write promise chaining is:
+getData(1)
+.then((res) => {
+    return getData(2);
+})
+.then((res) => {
+    return getData(3);
+})
+.then((res) => {
+    console.log(res);
+})

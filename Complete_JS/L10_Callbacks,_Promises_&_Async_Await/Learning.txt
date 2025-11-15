@@ -5,7 +5,46 @@ Asynchronous: Due to Synchronous programming, sometimes imp instructionsget bloc
 instructions, causes a delay in the UI. Asynchronous code execution allows to execute next instructions immediately 
 ans does not block the flow.
 
-Callback: A Callback is a fuction passed as an argument to another fuction.
+1.) Callback: A Callback is a fuction passed as an argument to another fuction.
 
 Callback Hell: Nested callbacks stacked below one another forming a pyramid structure.(Pyramid of Doom)
-This style of programming becomes difficult to understand & manage.
+--> This style of programming becomes difficult to understand & manage.
+
+
+
+
+
+2.) Promises: Promise is for "eventual" completion of task. It is an object in JS.
+--> It is a solution to Callback hell.
+NOTE: Generally, APIs returns promise
+Syntax: let promise = new Promise((resilve, reject => { ... }))
+NOTE: Resolve and Reject are callbacks provided by JS
+A JavaScript Promise object can be:
+a.) Pending: the result is undefined
+b.) Fulfilled(resolved): the result is a value(fulfilled)
+c.) Rejected: the result is an error object 
+NOTE: Promise has state (pending, fulfilled) & some result(result for resolve & error for reject).
+
+i.) .then() &
+ii.) .catch()
+
+i.) then(): then() is a method used with Promises.
+Syntax: let p = promise.resolve((res) => { ... })
+NOTE: .then() promise is used when we fullfill the condition.
+
+ii.) .catch(): .catch() in JavaScript is used to handle errors in Promises.
+NOTE: .catch() runs only when a Promise is rejected (i.e., an error happens).
+
+
+
+NOTE: Promises is better then Callback (They do the same work)
+
+
+
+
+3.) Async-Await: 
+--> Async-Await makes Asynchronous programming simpler then Callback and Promises.
+--> async function always returns a promise (By Default).
+--> Syntax: async function myFunc() { ... }
+--> Await pauses the execution of its surrounding async function until the promise is settled.
+NOTE: Await can only be used inside a Async Function.
