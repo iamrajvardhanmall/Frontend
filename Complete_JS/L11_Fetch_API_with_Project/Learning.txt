@@ -1,0 +1,21 @@
+Fetch API:
+--> API: Application Programming Interface
+--> The Fetch API provides an interface for fatching (sending/receiving) resources.
+--> It uses Request and Response objects.
+--> The fetch() method is used to fetch a resource (data).
+--> Syntax: let promise = fetch( url , [ options ])
+
+
+Understanding Terms:
+i.) AJAX: AJAX is Asynchronous JS & XML
+ii.) JSON: JSON is JavaScript Object Notation
+NOTE: We convert Response(JSON) into JS object using json() method.
+--> json() method: returns a second promise that resolves with the result of prasing the response body text as JSON. (Input is JSON, output is JS object)
+
+
+Request & Response:
+--> HTTP Verbs
+mdn url: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods
+--> Response Status code
+mdn url: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status
+NOTE: HTTP response headers also contain details about the responses, such as content type, HTTP status code, etc.
